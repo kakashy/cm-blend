@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CM Blend</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="main">
+    <div class="tag">
+      <h2>CM Blend</h2>
+    </div>
+    <hr />
+    <div class="info">
+      <div class="blender-loc">
+        <p>Blender location</p>
+        <input
+          type="file"
+          required />
+      </div>
+      <div class="blend-loc">
+        <p>Blend file location</p>
+        <input
+          type="file"
+          required />
+      </div>
+      </div>
+      <hr />
+      <div class="file-spec">
+        <dir class="start-fr">
+          <header>Start Frame</header>
+            <input
+              type="number"
+              placeholder="e.g 1"
+              required />
+            </dir>
+            <dir class="end-fr">
+              <header>End Frame</header>
+                <input
+                  type="number"
+                  placeholder="e.g 100"
+                  required />
+                </dir>
+        </div>
+    <div class="submit">
+      <button
+        id="render"
+        name="render">
+        Let's Go!
+      </button>
+    </div>
+  </div>
+</body>
 </html>
